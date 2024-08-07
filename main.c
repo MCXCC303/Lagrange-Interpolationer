@@ -6,7 +6,8 @@
 #include "PreFunc.h"
 #include "stdio.h"
 
-int main() {
+int main_0() {
+    // Data Collection
     freopen("input.txt", "r", stdin);
     int *value_sequence;
     int size = 1;
@@ -26,18 +27,15 @@ int main() {
      *
      */
 
+    // Initialize Linear Sequence and Line Base
     Line *lineList[size];
     for (int i = 0; i < size; ++i) {
-        initLinearSequence(lineList[i]);
-    }
-    for (int i = 0; i < size; ++i) {
-        lineList[i]->value = value_sequence[i];
-        lineList[i]->line_order = i + 1;
+        initLinearSequence(lineList[i], i + 1, value_sequence[i]);
     }
 
     LBase *lBaseList[size];
     for (int i = 0; i < size; ++i) {
-        initLineBase(lBaseList[i]);
+        initLineBase(lBaseList[i], size - 1);
     }
 
     return 0;

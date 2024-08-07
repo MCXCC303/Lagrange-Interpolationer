@@ -36,12 +36,15 @@ typedef struct lineBase {
      * After polyCalc there get [60,-107,59,-13,1] as numeratorSequence
      * (Means (x-1)(x-3)(x-4)(x-5)=60-107x+59x^2-13x^3+x^4)
      *
+     * Variable order is the same as the polyCalc()
+     *
      * In doing factorial first get the order of current line
      * l_i's denominator could trans into (i-1)!(n-i)!(-1)^i
-     * there line_order = i, size = n
+     * there line_order = i, value_size = n
      *
      */
     int *numeratorSequence;
+    int order;
     int denominator;
 } LBase;
 
@@ -81,6 +84,10 @@ int gcd(int a1, int a2) {
     return n;
 }
 
+int lcm(int a, int b) {
+    return a * b / gcd(a, b);
+}
+
 void clrArr(int *arr, int size) {
     /*
      * Clear an array or set the array into default value.
@@ -104,21 +111,24 @@ void swpArr(int *arr1, int *arr2, int size) {
     }
 }
 
-Line *initLinearSequence(Line *linearSequence) {
+Line *initLinearSequence(Line *linearSequence, int line_order, int value) {
     /*
      *
      */
     linearSequence = (Line *) malloc(sizeof(Line));
     linearSequence->sequence = NULL;
+    linearSequence->line_order = line_order;
+    linearSequence->value = value;
     return linearSequence;
 }
 
-Line *generateLinearSequence(int size) {
-    Line *linearSequence = (Line *) malloc(sizeof(Line));
+Line *generateLinearSequence(Line *linearSequence, int size) {
+
 }
 
-LBase *initLineBase(LBase *lineBase) {
+LBase *initLineBase(LBase *lineBase, int order) {
     lineBase = (LBase *) malloc(sizeof(LBase));
     lineBase->numeratorSequence = NULL;
+    lineBase->order = order;
     return lineBase;
 }

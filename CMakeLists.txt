@@ -8,4 +8,8 @@ add_executable(Lagrange_Interpolation main.c
         PreFunc.c
         PreFunc.h
         PolyTest.c
-        PolyCalc.h)
+        PolyCalc.h
+        FractionAddition.c
+        PreFuncTest.c
+        FractionAddition.h
+)
