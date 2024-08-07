@@ -5,8 +5,8 @@
 #include "FractionAddition.h"
 
 int main() {
-    int numeratorSequence1[2]={-3,1};
-    int numeratorSequence2[2]={-5,1};
+    int numeratorSequence1[2] = {-3, 1};
+    int numeratorSequence2[2] = {-5, 1};
     LBase *lineBase1 = initLineBase(lineBase1, 1);
     lineBase1->numeratorSequence = numeratorSequence1;
     lineBase1->denominator = 4;

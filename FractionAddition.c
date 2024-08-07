@@ -5,6 +5,12 @@
 #include "PreFunc.h"
 
 LBase *doFractionAddition(LBase *lineBase1, LBase *lineBase2) {
+    /**
+     * Calculate the result of two fraction list
+     * @param lineBase1
+     * @param lineBase2
+     * @return lineBaseResult
+     */
     // Initialize
     int numeratorSequence1;
     int numeratorSequence2;

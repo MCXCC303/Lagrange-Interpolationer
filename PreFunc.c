@@ -6,17 +6,18 @@
 #include "stdlib.h"
 
 typedef struct linearSequence {
-    /*
+    /**
      * Line: Included a sequence of x and a value as y and a order of which point will this line go for
-     * l_i = y0(x-a0)(x-a1)...(x-a_(i-1))(x-a_(i+1))...(x-an)/(ai-a0)(ai-a1)...(ai_(i-1))(ai_(i+1))...(ai-an)
-     * sequence = [a0,a1,...,a(i-1),a(i+1),...an]
-     * line_order = i
      *
-     * In simple, the x of every value will be set into (1,2,3...n)
-     * the sequence will trans into:
-     * sequence = [1,2,...i-1,i+1,...n]
+     * @remark l_i = y0(x-a0)(x-a1)...(x-a_(i-1))(x-a_(i+1))...(x-an)/(ai-a0)(ai-a1)...(ai_(i-1))(ai_(i+1))...(ai-an)
+     * @remark sequence = [a0,a1,...,a(i-1),a(i+1),...an]
+     * @remark line_order = i
      *
-     * Use generateLinearSequence() to generate this sequence
+     * @remark In simple, the x of every value will be set into (1,2,3...n)
+     * @remark the sequence will trans into:
+     * @remark sequence = [1,2,...i-1,i+1,...n]
+     *
+     * @note Use generateLinearSequence() to generate this sequence
      *
      */
     int *sequence;
@@ -25,23 +26,24 @@ typedef struct linearSequence {
 } Line;
 
 typedef struct lineBase {
-    /*
+    /**
      * LBase included a sequence of numerator and a denominator
      * the numerator directly comes from the polyCalc()
      * the denominator comes from factorial()
      *
-     * Example:
-     * Line: sequence = [-1,-3,-4,-5]
-     *       value = 4
-     * After polyCalc there get [60,-107,59,-13,1] as numeratorSequence
-     * (Means (x-1)(x-3)(x-4)(x-5)=60-107x+59x^2-13x^3+x^4)
+     * @example Line: sequence = [-1,-3,-4,-5]\n
+     *                value = 4
      *
-     * Variable order is the same as the polyCalc()
+     * @note After polyCalc there get [60,-107,59,-13,1] as numeratorSequence
+     * @note (Means (x-1)(x-3)(x-4)(x-5)=60-107x+59x^2-13x^3+x^4)
+     * @note Variable order is the same as the polyCalc()
+     * @note In doing factorial first get the order of current line
+     * @note l_i's denominator could trans into (i-1)!(n-i)!(-1)^i
+     * @note there line_order = i, value_size = n
      *
-     * In doing factorial first get the order of current line
-     * l_i's denominator could trans into (i-1)!(n-i)!(-1)^i
-     * there line_order = i, value_size = n
-     *
+     * @var numeratorSequence: The numerator of the line
+     * @var order: The order of the line
+     * @var denominator: The denominator of the line
      */
     int *numeratorSequence;
     int order;
@@ -49,8 +51,10 @@ typedef struct lineBase {
 } LBase;
 
 int factorial(int n) {
-    /*
+    /**
      * Do factorial
+     * @param n
+     * @return n!
      *
      */
     if (n == 0) {
@@ -61,12 +65,14 @@ int factorial(int n) {
 }
 
 int gcd(int a1, int a2) {
-    /*
+    /**
      * Pre-set to calculate full-division algorithm.
+     * @param a1
+     * @param a2
+     * @return gcd
      *
-     * Variables:
-     * tmp: Temporary in swpArr
-     * res: Remainder
+     * @var tmp: Temporary in swpArr
+     * @var res: Remainder
      *
      */
     int n = a1, m = a2;
@@ -89,9 +95,11 @@ int lcm(int a, int b) {
 }
 
 void clrArr(int *arr, int size) {
-    /*
+    /**
      * Clear an array or set the array into default value.
-     *
+     * @param arr
+     * @param size
+     * @return
      */
     for (int i = 0; i < size; ++i) {
         arr[i] = 0;
@@ -99,8 +107,12 @@ void clrArr(int *arr, int size) {
 }
 
 void swpArr(int *arr1, int *arr2, int size) {
-    /*
+    /**
      * Swap two arrays (MEM changed).
+     * @param arr1
+     * @param arr2
+     * @param size
+     * @return
      *
      */
     int tmp[size];
@@ -112,8 +124,16 @@ void swpArr(int *arr1, int *arr2, int size) {
 }
 
 Line *initLinearSequence(Line *linearSequence, int line_order, int value) {
-    /*
+    /**
+     * Initialize a Line.
+     * @param linearSequence
+     * @param line_order
+     * @param value
+     * @return Line(Initialized)
      *
+     * @note Line->sequence will not be initialized, this directly set by generateLinearSequence()
+     *
+     * @example Line *line1 = initLinearSequence(line1,line_order,value);
      */
     linearSequence = (Line *) malloc(sizeof(Line));
     linearSequence->sequence = NULL;
@@ -127,6 +147,17 @@ Line *generateLinearSequence(Line *linearSequence, int size) {
 }
 
 LBase *initLineBase(LBase *lineBase, int order) {
+    /**
+     * Initialize a LineBase.
+     * @param lineBase
+     * @param order
+     * @return LBase(Initialized)
+     *
+     * @note LBase->denominator will not be initialized, this directly set by factorial()
+     *
+     * @example
+     * LBase *lineBase1 = initLineBase(*lineBase1, order);
+     */
     lineBase = (LBase *) malloc(sizeof(LBase));
     lineBase->numeratorSequence = NULL;
     lineBase->order = order;
