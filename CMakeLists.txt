@@ -6,4 +6,6 @@ set(CMAKE_C_STANDARD 11)
 add_executable(Lagrange_Interpolation main.c
         PolyCalc.c
         PreFunc.c
-        PreFunc.h)
+        PreFunc.h
+        PolyTest.c
+        PolyCalc.h)

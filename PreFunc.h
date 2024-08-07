@@ -11,6 +11,7 @@
 typedef struct linearSequence {
     int *sequence;
     int value;
+    int line_order;
 } Line;
 
 Line *initLinearSequence(Line *linearSequence);

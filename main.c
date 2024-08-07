@@ -32,6 +32,7 @@ int main() {
     }
     for (int i = 0; i < size; ++i) {
         lineList[i]->value = value_sequence[i];
+        lineList[i]->line_order = i + 1;
     }
 
     LBase *lBaseList[size];
