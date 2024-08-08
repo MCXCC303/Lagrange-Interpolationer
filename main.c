@@ -59,5 +59,6 @@ int main() {
 
     // Print Result
     printFactorResult(factors, size - 1);
+    free(value_sequence);
     return 0;
 }

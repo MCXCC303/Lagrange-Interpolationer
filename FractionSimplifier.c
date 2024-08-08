@@ -17,6 +17,9 @@ long long *Simplifier(long long *arr) {
      *
      * @note The value of original array will be changed
      */
+    if (*arr == 0) {
+        return arr;
+    }
     long long _gcd = gcd(*arr, *(arr + 1));
     *arr /= _gcd;
     *(arr + 1) /= _gcd;

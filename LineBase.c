@@ -79,7 +79,7 @@ LBase *generateDenominator(Line *linearSequence, LBase *lineBase) {
      * @return LBase(Generated)
      *
      * @note The denominator of the line is given by factorial()
-     * @note denominator is calculated by (i-1)!(n-i)!(-1)^i
+     * @note denominator is calculated by (i-1)!(n-i)!(-1)^(n-i)
      * @note there line_order = i, order = n
      *
      * @example
@@ -88,7 +88,7 @@ LBase *generateDenominator(Line *linearSequence, LBase *lineBase) {
     int denominator;
     denominator =
             factorial(linearSequence->line_order - 1) * factorial(lineBase->order + 1 - linearSequence->line_order);
-    if (linearSequence->line_order % 2 == 0) {
+    if ((lineBase->order + 1 - linearSequence->line_order) % 2 == 0) {
         denominator *= 1;
     } else {
         denominator *= -1;

@@ -50,6 +50,10 @@ long long *polyCalc(int order, const int *org) {
         if (order_res == 0) {
             swp[0] = tmp[0];
             swp[1] = tmp[1];
+            if (order_res == order - 1) {
+                swpArr(swp, res, order + 1);
+                break;
+            }
             continue;
         }
         for (int i = 0; i < 2; ++i) {
