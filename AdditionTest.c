@@ -1,10 +1,9 @@
 //
 // Created by MCXCC on 2024/8/7.
 //
-#include "PreFunc.h"
 #include "FractionAddition.h"
 
-int main() {
+int main_1() {
     int numeratorSequence1[2] = {-3, 1};
     int numeratorSequence2[2] = {-5, 1};
     LBase *lineBase1 = initLineBase(lineBase1, 1);

@@ -3,10 +3,10 @@
  * @date 2024/8/7
 */
 
+#include "LinearSequence.h"
 #include "PreFunc.h"
 
-int *polyCalc(int order, const int *org) {
-
+long long *polyCalc(int order, const int *org) {
     /**
      * Calculate the polynomial.
      * @param order
@@ -20,10 +20,10 @@ int *polyCalc(int order, const int *org) {
      *
      */
 
-    int tmp[2] = {0, 1}, swp[order + 1];
+    long long tmp[2] = {0, 1}, swp[order + 1];
 
-    static int *res;
-    res = malloc(sizeof(int) * (order + 1));
+    static long long *res;
+    res = malloc(sizeof(long long) * (order + 1));
 
     /**
      * @var org: Original Coefficients

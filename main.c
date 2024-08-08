@@ -3,10 +3,15 @@
  * @date 2024/8/7
 */
 
-#include "PreFunc.h"
+#include "LinearSequence.h"
+#include "LineBase.h"
 #include "stdio.h"
+#include "FractionAddition.h"
+#include "FactorSequence.h"
+#include "FractionSimplifier.h"
+#include "PrintFactorResult.h"
 
-int main_0() {
+int main() {
     // Data Collection
     freopen("input.txt", "r", stdin);
     int *value_sequence;
@@ -30,13 +35,29 @@ int main_0() {
     // Initialize Linear Sequence and Line Base
     Line *lineList[size];
     for (int i = 0; i < size; ++i) {
-        initLinearSequence(lineList[i], i + 1, value_sequence[i]);
+        lineList[i] = initLinearSequence(lineList[i], i + 1, value_sequence[i]);
+        lineList[i] = generateLinearSequence(lineList[i], size - 1);
     }
 
     LBase *lBaseList[size];
     for (int i = 0; i < size; ++i) {
-        initLineBase(lBaseList[i], size - 1);
+        lBaseList[i] = initLineBase(lBaseList[i], size - 1);
+        lBaseList[i] = generateNumerator(lineList[i], lBaseList[i]);
+        lBaseList[i] = generateDenominator(lineList[i], lBaseList[i]);
+    }
+    LBase *lBaseResult = doFractionAddition(lBaseList[0], lBaseList[1]);
+    for (int i = 2; i < size; ++i) {
+        lBaseResult = doFractionAddition(lBaseResult, lBaseList[i]);
     }
 
+    // Transfer Result
+    Factors *factors = (Factors *) malloc(sizeof(Factors));
+    factors = sequenceTransfer(factors, lBaseResult);
+    for (int i = 0; i < size; ++i) {
+        factors->sequence[i] = Simplifier(factors->sequence[i]);
+    } // Simplify Fraction
+
+    // Print Result
+    printFactorResult(factors, size - 1);
     return 0;
 }

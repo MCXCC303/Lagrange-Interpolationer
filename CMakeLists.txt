@@ -10,6 +10,17 @@ add_executable(Lagrange_Interpolation main.c
         PolyTest.c
         PolyCalc.h
         FractionAddition.c
-        PreFuncTest.c
+        AdditionTest.c
         FractionAddition.h
+        LinearSequence.c
+        LinearSequence.h
+        LineBase.c
+        LineBase.h
+        generateSequenceTest.c
+        FractionSimplifier.c
+        FractionSimplifier.h
+        FactorSequence.c
+        FactorSequence.h
+        PrintFactorResult.c
+        PrintFactorResult.h
 )

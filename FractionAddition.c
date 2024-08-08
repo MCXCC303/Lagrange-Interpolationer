@@ -3,6 +3,7 @@
 //
 
 #include "PreFunc.h"
+#include "LineBase.h"
 
 LBase *doFractionAddition(LBase *lineBase1, LBase *lineBase2) {
     /**
@@ -12,11 +13,11 @@ LBase *doFractionAddition(LBase *lineBase1, LBase *lineBase2) {
      * @return lineBaseResult
      */
     // Initialize
-    int numeratorSequence1;
-    int numeratorSequence2;
+    long long numeratorSequence1;
+    long long numeratorSequence2;
     int order = lineBase1->order;
     LBase *lineBaseResult = initLineBase(lineBaseResult, order);
-    lineBaseResult->numeratorSequence = malloc(sizeof(int) * (order + 1));
+    lineBaseResult->numeratorSequence = (long long *) malloc(sizeof(long long) * (order + 1));
     lineBaseResult->order = order;
 
     // Calculate
