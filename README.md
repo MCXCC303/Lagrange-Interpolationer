@@ -16,8 +16,8 @@ Process finished with exit code 0
 ```
 
 ## Future Expectations:
-- [] Graphical Interface
-- [] Better Algorithms
-- [] Smaller Code
-- [] High Accuracy
-- [] 2D/3D Data Support
+- [ ] Graphical Interface
+- [ ] Better Algorithms
+- [ ] Smaller Code
+- [ ] High Accuracy
+- [ ] 2D/3D Data Support
