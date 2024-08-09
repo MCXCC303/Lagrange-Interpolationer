@@ -21,6 +21,8 @@ add_executable(Lagrange_Interpolation main.c
         FractionSimplifier.h
         FactorSequence.c
         FactorSequence.h
-        PrintFactorResult.c
-        PrintFactorResult.h
+        Output/PrintFactorResult.c
+        Output/PrintFactorResult.h
+        Output/LatexStyleOutput.c
+        Output/LatexStyleOutput.h
 )

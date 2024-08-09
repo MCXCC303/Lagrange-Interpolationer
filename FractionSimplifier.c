@@ -7,7 +7,7 @@
 
 long long *Simplifier(long long *arr) {
     /**
-     * Get a 1D vector (nu,de) input, use nu as the numerator and de as the denominator, simplify the fraction and return a 1D vector (nu',de')
+     * @brief Get a 1D vector (nu,de) input, use nu as the numerator and de as the denominator, simplify the fraction and return a 1D vector (nu',de')
      *
      * @param arr: a 1D vector (nu,de)
      * @return a 1D vector (nu',de')

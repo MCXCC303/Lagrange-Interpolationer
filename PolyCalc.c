@@ -8,7 +8,7 @@
 
 long long *polyCalc(int order, const int *org) {
     /**
-     * Calculate the polynomial.
+     * @brief Calculate the polynomial.
      * @param order
      * @param org
      * @return *res
@@ -32,8 +32,8 @@ long long *polyCalc(int order, const int *org) {
      * @var swp: Temporary Coefficients like (x^3-3x^2+2x-2)
      * @var res: Result Array (static)
      *
-     * Variable order is come from the length of original data to Interpolation.\n
-     * order = size - 1;
+     * @note Variable order is come from the length of original data to Interpolation.
+     * @note order = size - 1;
      *
      */
 

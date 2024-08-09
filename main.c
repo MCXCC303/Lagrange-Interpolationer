@@ -9,7 +9,8 @@
 #include "FractionAddition.h"
 #include "FactorSequence.h"
 #include "FractionSimplifier.h"
-#include "PrintFactorResult.h"
+#include "Output/PrintFactorResult.h"
+#include "Output/LatexStyleOutput.h"
 
 int main() {
     // Data Collection
@@ -59,6 +60,8 @@ int main() {
 
     // Print Result
     printFactorResult(factors, size - 1);
+    latexStyleOutput(factors, size - 1);
+
     free(value_sequence);
     return 0;
 }

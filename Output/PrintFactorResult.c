@@ -3,10 +3,18 @@
  * @date 2024/8/8
 */
 
-#include "FactorSequence.h"
+#include "../FactorSequence.h"
 #include "stdio.h"
 
 void printFactorResult(Factors *factors, int order) {
+    /**
+     * @brief Print the factor result in console
+     * @param factors
+     * @param order
+     * @return
+     *
+     * @note factors should already be simplified
+     */
     printf("f(x) = ");
     for (int i = 0; i < order + 1; ++i) {
         if (factors->sequence[i][0] == 0) {
@@ -40,5 +48,5 @@ void printFactorResult(Factors *factors, int order) {
         if (i != order && (i < order && factors->sequence[i + 1][0] != 0)) {
             printf(" + ");
         }
-    }
+    } // Still have bugs here
 }

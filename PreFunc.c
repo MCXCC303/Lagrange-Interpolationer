@@ -5,10 +5,9 @@
 
 long long factorial(int n) {
     /**
-     * Do factorial
+     * @brief Do factorial
      * @param n
      * @return n!
-     *
      */
     if (n == 0) {
         return 1;
@@ -19,14 +18,13 @@ long long factorial(int n) {
 
 long long gcd(long long a1, long long a2) {
     /**
-     * Pre-set to calculate full-division algorithm.
+     * @brief Pre-set to calculate full-division algorithm.
      * @param a1
      * @param a2
      * @return gcd
      *
      * @var tmp: Temporary in swpArr
      * @var res: Remainder
-     *
      */
     long long n = a1, m = a2;
     long long tmp, res;
@@ -49,7 +47,7 @@ long long lcm(long long a, long long b) {
 
 void clrArr(long long *arr, int size) {
     /**
-     * Clear an array or set the array into default value.
+     * @brief Clear an array or set the array into default value.
      * @param arr
      * @param size
      * @return
@@ -61,7 +59,7 @@ void clrArr(long long *arr, int size) {
 
 void swpArr(long long *arr1, long long *arr2, int size) {
     /**
-     * Swap two arrays (MEM changed).
+     * @brief Swap two arrays (MEM changed).
      * @param arr1
      * @param arr2
      * @param size

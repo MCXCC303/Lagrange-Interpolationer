@@ -10,13 +10,12 @@
 
 typedef struct lineBase {
     /**
-     * LBase included a sequence of numerator and a denominator
-     * the numerator directly comes from the polyCalc()
-     * the denominator comes from factorial()
+     * @brief LBase included a sequence of numerator and a denominator
      *
-     * @example Line: sequence = [-1,-3,-4,-5]\n
-     *                value = 4
-     *
+     * @example Line: sequence = [-1,-3,-4,-5]
+     * @example value = 4
+     * @note The numerator directly comes from the polyCalc()
+     * @note The denominator comes from factorial()
      * @note After polyCalc there get [60,-107,59,-13,1] as numeratorSequence
      * @note (Means (x-1)(x-3)(x-4)(x-5)=60-107x+59x^2-13x^3+x^4)
      * @note Variable order is the same as the polyCalc()
@@ -35,15 +34,14 @@ typedef struct lineBase {
 
 LBase *initLineBase(LBase *lineBase, int order) {
     /**
-     * Initialize a LineBase.
+     * @brief Initialize a LineBase.
      * @param lineBase
      * @param order
      * @return LBase(Initialized)
      *
      * @note LBase->denominator will not be initialized, this directly set by factorial()
      *
-     * @example
-     * LBase *lineBase1 = initLineBase(*lineBase1, order);
+     * @example LBase *lineBase1 = initLineBase(*lineBase1, order);
      */
     lineBase = (LBase *) malloc(sizeof(LBase));
     lineBase->numeratorSequence = NULL;
@@ -53,15 +51,14 @@ LBase *initLineBase(LBase *lineBase, int order) {
 
 LBase *generateNumerator(Line *linearSequence, LBase *lineBase) {
     /**
-     * Generate the numerator sequence of the line and give the sequence to LBase.
+     * @brief Generate the numerator sequence of the line and give the sequence to LBase.
      * @param linearSequence
      * @param lineBase
      * @return LBase(Generated)
      *
      * @note The sequence of the line is given by polyCalc()
      *
-     * @example
-     * LBase *lineBase1 = generateNumerator(*linearSequence, *lineBase1);
+     * @example LBase *lineBase1 = generateNumerator(*linearSequence, *lineBase1);
      */
     long long *numerator = polyCalc(lineBase->order, linearSequence->sequence);
     for (int i = 0; i < lineBase->order + 1; ++i) {
@@ -73,7 +70,7 @@ LBase *generateNumerator(Line *linearSequence, LBase *lineBase) {
 
 LBase *generateDenominator(Line *linearSequence, LBase *lineBase) {
     /**
-     * Generate the denominator of the line and give the denominator to LBase.
+     * @brief Generate the denominator of the line and give the denominator to LBase.
      * @param linearSequence
      * @param lineBase
      * @return LBase(Generated)
@@ -82,8 +79,7 @@ LBase *generateDenominator(Line *linearSequence, LBase *lineBase) {
      * @note denominator is calculated by (i-1)!(n-i)!(-1)^(n-i)
      * @note there line_order = i, order = n
      *
-     * @example
-     * LBase *lineBase1 = generateDenominator(*linearSequence, *lineBase1);
+     * @example LBase *lineBase1 = generateDenominator(*linearSequence, *lineBase1);
      */
     int denominator;
     denominator =

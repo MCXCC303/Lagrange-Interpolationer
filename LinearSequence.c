@@ -7,7 +7,7 @@
 
 typedef struct linearSequence {
     /**
-     * Line: Included a sequence of x and a value as y and a order of which point will this line go for
+     * @brief Line: Included a sequence of x and a value as y and a order of which point will this line go for
      *
      * @remark l_i = y0(x-a0)(x-a1)...(x-a_(i-1))(x-a_(i+1))...(x-an)/(ai-a0)(ai-a1)...(ai_(i-1))(ai_(i+1))...(ai-an)
      * @remark sequence = [a0,a1,...,a(i-1),a(i+1),...an]
@@ -18,7 +18,6 @@ typedef struct linearSequence {
      * @remark sequence = [1,2,...i-1,i+1,...n]
      *
      * @note Use generateLinearSequence() to generate this sequence
-     *
      */
     int *sequence;
     int value;
@@ -27,7 +26,7 @@ typedef struct linearSequence {
 
 Line *initLinearSequence(Line *linearSequence, int line_order, int value) {
     /**
-     * Initialize a Line.
+     * @brief Initialize a Line.
      * @param linearSequence
      * @param line_order
      * @param value
@@ -46,7 +45,7 @@ Line *initLinearSequence(Line *linearSequence, int line_order, int value) {
 
 Line *generateLinearSequence(Line *linearSequence, int order) {
     /**
-     * Generate a Line's sequence.
+     * @brief Generate a Line's sequence.
      * @param linearSequence
      * @param order
      * @return Line(Generated)
