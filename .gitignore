@@ -85,3 +85,7 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Compile Files
+cmake-build-debug
+.idea

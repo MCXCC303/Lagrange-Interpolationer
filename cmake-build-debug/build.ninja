@@ -51,81 +51,87 @@ build cmake_object_order_depends_target_Lagrange_Interpolation: phony || CMakeFi
 
 build CMakeFiles/Lagrange_Interpolation.dir/main.c.obj: C_COMPILER__Lagrange_Interpolation_unscanned_Debug D$:/Programme/IDEAProjects/C/Tools/Lagrange$ Interpolation/main.c || cmake_object_order_depends_target_Lagrange_Interpolation
   DEP_FILE = CMakeFiles\Lagrange_Interpolation.dir\main.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Lagrange_Interpolation.dir
   OBJECT_FILE_DIR = CMakeFiles\Lagrange_Interpolation.dir
 
 build CMakeFiles/Lagrange_Interpolation.dir/PolyCalc.c.obj: C_COMPILER__Lagrange_Interpolation_unscanned_Debug D$:/Programme/IDEAProjects/C/Tools/Lagrange$ Interpolation/PolyCalc.c || cmake_object_order_depends_target_Lagrange_Interpolation
   DEP_FILE = CMakeFiles\Lagrange_Interpolation.dir\PolyCalc.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Lagrange_Interpolation.dir
   OBJECT_FILE_DIR = CMakeFiles\Lagrange_Interpolation.dir
 
 build CMakeFiles/Lagrange_Interpolation.dir/PreFunc.c.obj: C_COMPILER__Lagrange_Interpolation_unscanned_Debug D$:/Programme/IDEAProjects/C/Tools/Lagrange$ Interpolation/PreFunc.c || cmake_object_order_depends_target_Lagrange_Interpolation
   DEP_FILE = CMakeFiles\Lagrange_Interpolation.dir\PreFunc.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Lagrange_Interpolation.dir
   OBJECT_FILE_DIR = CMakeFiles\Lagrange_Interpolation.dir
 
 build CMakeFiles/Lagrange_Interpolation.dir/PolyTest.c.obj: C_COMPILER__Lagrange_Interpolation_unscanned_Debug D$:/Programme/IDEAProjects/C/Tools/Lagrange$ Interpolation/PolyTest.c || cmake_object_order_depends_target_Lagrange_Interpolation
   DEP_FILE = CMakeFiles\Lagrange_Interpolation.dir\PolyTest.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Lagrange_Interpolation.dir
   OBJECT_FILE_DIR = CMakeFiles\Lagrange_Interpolation.dir
 
 build CMakeFiles/Lagrange_Interpolation.dir/FractionAddition.c.obj: C_COMPILER__Lagrange_Interpolation_unscanned_Debug D$:/Programme/IDEAProjects/C/Tools/Lagrange$ Interpolation/FractionAddition.c || cmake_object_order_depends_target_Lagrange_Interpolation
   DEP_FILE = CMakeFiles\Lagrange_Interpolation.dir\FractionAddition.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Lagrange_Interpolation.dir
   OBJECT_FILE_DIR = CMakeFiles\Lagrange_Interpolation.dir
 
 build CMakeFiles/Lagrange_Interpolation.dir/AdditionTest.c.obj: C_COMPILER__Lagrange_Interpolation_unscanned_Debug D$:/Programme/IDEAProjects/C/Tools/Lagrange$ Interpolation/AdditionTest.c || cmake_object_order_depends_target_Lagrange_Interpolation
   DEP_FILE = CMakeFiles\Lagrange_Interpolation.dir\AdditionTest.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Lagrange_Interpolation.dir
   OBJECT_FILE_DIR = CMakeFiles\Lagrange_Interpolation.dir
 
 build CMakeFiles/Lagrange_Interpolation.dir/LinearSequence.c.obj: C_COMPILER__Lagrange_Interpolation_unscanned_Debug D$:/Programme/IDEAProjects/C/Tools/Lagrange$ Interpolation/LinearSequence.c || cmake_object_order_depends_target_Lagrange_Interpolation
   DEP_FILE = CMakeFiles\Lagrange_Interpolation.dir\LinearSequence.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Lagrange_Interpolation.dir
   OBJECT_FILE_DIR = CMakeFiles\Lagrange_Interpolation.dir
 
 build CMakeFiles/Lagrange_Interpolation.dir/LineBase.c.obj: C_COMPILER__Lagrange_Interpolation_unscanned_Debug D$:/Programme/IDEAProjects/C/Tools/Lagrange$ Interpolation/LineBase.c || cmake_object_order_depends_target_Lagrange_Interpolation
   DEP_FILE = CMakeFiles\Lagrange_Interpolation.dir\LineBase.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Lagrange_Interpolation.dir
   OBJECT_FILE_DIR = CMakeFiles\Lagrange_Interpolation.dir
 
 build CMakeFiles/Lagrange_Interpolation.dir/generateSequenceTest.c.obj: C_COMPILER__Lagrange_Interpolation_unscanned_Debug D$:/Programme/IDEAProjects/C/Tools/Lagrange$ Interpolation/generateSequenceTest.c || cmake_object_order_depends_target_Lagrange_Interpolation
   DEP_FILE = CMakeFiles\Lagrange_Interpolation.dir\generateSequenceTest.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Lagrange_Interpolation.dir
   OBJECT_FILE_DIR = CMakeFiles\Lagrange_Interpolation.dir
 
 build CMakeFiles/Lagrange_Interpolation.dir/FractionSimplifier.c.obj: C_COMPILER__Lagrange_Interpolation_unscanned_Debug D$:/Programme/IDEAProjects/C/Tools/Lagrange$ Interpolation/FractionSimplifier.c || cmake_object_order_depends_target_Lagrange_Interpolation
   DEP_FILE = CMakeFiles\Lagrange_Interpolation.dir\FractionSimplifier.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Lagrange_Interpolation.dir
   OBJECT_FILE_DIR = CMakeFiles\Lagrange_Interpolation.dir
 
 build CMakeFiles/Lagrange_Interpolation.dir/FactorSequence.c.obj: C_COMPILER__Lagrange_Interpolation_unscanned_Debug D$:/Programme/IDEAProjects/C/Tools/Lagrange$ Interpolation/FactorSequence.c || cmake_object_order_depends_target_Lagrange_Interpolation
   DEP_FILE = CMakeFiles\Lagrange_Interpolation.dir\FactorSequence.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Lagrange_Interpolation.dir
   OBJECT_FILE_DIR = CMakeFiles\Lagrange_Interpolation.dir
 
 build CMakeFiles/Lagrange_Interpolation.dir/Output/PrintFactorResult.c.obj: C_COMPILER__Lagrange_Interpolation_unscanned_Debug D$:/Programme/IDEAProjects/C/Tools/Lagrange$ Interpolation/Output/PrintFactorResult.c || cmake_object_order_depends_target_Lagrange_Interpolation
   DEP_FILE = CMakeFiles\Lagrange_Interpolation.dir\Output\PrintFactorResult.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Lagrange_Interpolation.dir
   OBJECT_FILE_DIR = CMakeFiles\Lagrange_Interpolation.dir\Output
 
 build CMakeFiles/Lagrange_Interpolation.dir/Output/LatexStyleOutput.c.obj: C_COMPILER__Lagrange_Interpolation_unscanned_Debug D$:/Programme/IDEAProjects/C/Tools/Lagrange$ Interpolation/Output/LatexStyleOutput.c || cmake_object_order_depends_target_Lagrange_Interpolation
   DEP_FILE = CMakeFiles\Lagrange_Interpolation.dir\Output\LatexStyleOutput.c.obj.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Lagrange_Interpolation.dir
   OBJECT_FILE_DIR = CMakeFiles\Lagrange_Interpolation.dir\Output
+
+build CMakeFiles/Lagrange_Interpolation.dir/Graphic/Main.cpp.obj: CXX_COMPILER__Lagrange_Interpolation_unscanned_Debug D$:/Programme/IDEAProjects/C/Tools/Lagrange$ Interpolation/Graphic/Main.cpp || cmake_object_order_depends_target_Lagrange_Interpolation
+  DEP_FILE = CMakeFiles\Lagrange_Interpolation.dir\Graphic\Main.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Lagrange_Interpolation.dir
+  OBJECT_FILE_DIR = CMakeFiles\Lagrange_Interpolation.dir\Graphic
 
 
 # =============================================================================
@@ -135,9 +141,9 @@ build CMakeFiles/Lagrange_Interpolation.dir/Output/LatexStyleOutput.c.obj: C_COM
 #############################################
 # Link the executable Lagrange_Interpolation.exe
 
-build Lagrange_Interpolation.exe: C_EXECUTABLE_LINKER__Lagrange_Interpolation_Debug CMakeFiles/Lagrange_Interpolation.dir/main.c.obj CMakeFiles/Lagrange_Interpolation.dir/PolyCalc.c.obj CMakeFiles/Lagrange_Interpolation.dir/PreFunc.c.obj CMakeFiles/Lagrange_Interpolation.dir/PolyTest.c.obj CMakeFiles/Lagrange_Interpolation.dir/FractionAddition.c.obj CMakeFiles/Lagrange_Interpolation.dir/AdditionTest.c.obj CMakeFiles/Lagrange_Interpolation.dir/LinearSequence.c.obj CMakeFiles/Lagrange_Interpolation.dir/LineBase.c.obj CMakeFiles/Lagrange_Interpolation.dir/generateSequenceTest.c.obj CMakeFiles/Lagrange_Interpolation.dir/FractionSimplifier.c.obj CMakeFiles/Lagrange_Interpolation.dir/FactorSequence.c.obj CMakeFiles/Lagrange_Interpolation.dir/Output/PrintFactorResult.c.obj CMakeFiles/Lagrange_Interpolation.dir/Output/LatexStyleOutput.c.obj
+build Lagrange_Interpolation.exe: CXX_EXECUTABLE_LINKER__Lagrange_Interpolation_Debug CMakeFiles/Lagrange_Interpolation.dir/main.c.obj CMakeFiles/Lagrange_Interpolation.dir/PolyCalc.c.obj CMakeFiles/Lagrange_Interpolation.dir/PreFunc.c.obj CMakeFiles/Lagrange_Interpolation.dir/PolyTest.c.obj CMakeFiles/Lagrange_Interpolation.dir/FractionAddition.c.obj CMakeFiles/Lagrange_Interpolation.dir/AdditionTest.c.obj CMakeFiles/Lagrange_Interpolation.dir/LinearSequence.c.obj CMakeFiles/Lagrange_Interpolation.dir/LineBase.c.obj CMakeFiles/Lagrange_Interpolation.dir/generateSequenceTest.c.obj CMakeFiles/Lagrange_Interpolation.dir/FractionSimplifier.c.obj CMakeFiles/Lagrange_Interpolation.dir/FactorSequence.c.obj CMakeFiles/Lagrange_Interpolation.dir/Output/PrintFactorResult.c.obj CMakeFiles/Lagrange_Interpolation.dir/Output/LatexStyleOutput.c.obj CMakeFiles/Lagrange_Interpolation.dir/Graphic/Main.cpp.obj
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = -Wl,-Bstatic  -leasyx  -lgdi32  -lole32  -Wl,-Bdynamic  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Lagrange_Interpolation.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -190,14 +196,14 @@ build all: phony Lagrange_Interpolation.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake D$:/Programme/IDEAProjects/C/Tools/Lagrange$ Interpolation/CMakeLists.txt D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake
+build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake D$:/Programme/IDEAProjects/C/Tools/Lagrange$ Interpolation/CMakeLists.txt D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake D$:/Programme/IDEAProjects/C/Tools/Lagrange$ Interpolation/CMakeLists.txt D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake: phony
+build CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake D$:/Programme/IDEAProjects/C/Tools/Lagrange$ Interpolation/CMakeLists.txt D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake D$:/Softwares/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake: phony
 
 
 #############################################

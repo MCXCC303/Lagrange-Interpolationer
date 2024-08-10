@@ -9,10 +9,10 @@
 #include "FractionAddition.h"
 #include "FactorSequence.h"
 #include "FractionSimplifier.h"
-#include "Output/PrintFactorResult.h"
-#include "Output/LatexStyleOutput.h"
+#include "../Output/PrintFactorResult.h"
+#include "../Output/LatexStyleOutput.h"
 
-int main() {
+int single() {
     // Data Collection
     freopen("input.txt", "r", stdin);
     int *value_sequence;

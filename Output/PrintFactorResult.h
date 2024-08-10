@@ -6,7 +6,7 @@
 #ifndef LAGRANGE_INTERPOLATION_PRINTFACTORRESULT_H
 #define LAGRANGE_INTERPOLATION_PRINTFACTORRESULT_H
 
-#include "../FactorSequence.h"
+#include "../SingleValue/FactorSequence.h"
 
 void printFactorResult(Factors *factors, int order);
 

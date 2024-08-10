@@ -3,7 +3,7 @@
  * @date 2024/8/8
 */
 
-#include "../FactorSequence.h"
+#include "../SingleValue/FactorSequence.h"
 #include "stdio.h"
 
 void printFactorResult(Factors *factors, int order) {

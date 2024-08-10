@@ -4,7 +4,7 @@
 */
 
 #include "stdio.h"
-#include "../FactorSequence.h"
+#include "../SingleValue/FactorSequence.h"
 
 void latexStyleOutput(Factors *factors, int order) {
     /**

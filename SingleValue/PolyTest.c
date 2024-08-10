@@ -4,7 +4,7 @@
 
 #include "PolyCalc.h"
 
-int test() {
+int pltest() {
     int org[4] = {-1, -3, -4, -5};
     int *p = polyCalc(4, org);
     return 0;

@@ -1,8 +1,9 @@
 cmake_minimum_required(VERSION 3.28)
-project(Lagrange_Interpolation C)
+project(Lagrange_Interpolation)
 
-set(CMAKE_C_STANDARD 11)
+set(CMAKE_CXX_STANDARD 23)
 
+link_libraries(libeasyx.a libgdi32.a libole32.a)
 add_executable(Lagrange_Interpolation main.c
         PolyCalc.c
         PreFunc.c
@@ -25,4 +26,6 @@ add_executable(Lagrange_Interpolation main.c
         Output/PrintFactorResult.h
         Output/LatexStyleOutput.c
         Output/LatexStyleOutput.h
+        Graphic/Main.cpp
+        Graphic/Configurations.h
 )

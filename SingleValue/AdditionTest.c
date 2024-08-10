@@ -3,7 +3,7 @@
 //
 #include "FractionAddition.h"
 
-int main_1() {
+int adtest() {
     int numeratorSequence1[2] = {-3, 1};
     int numeratorSequence2[2] = {-5, 1};
     LBase *lineBase1 = initLineBase(lineBase1, 1);
