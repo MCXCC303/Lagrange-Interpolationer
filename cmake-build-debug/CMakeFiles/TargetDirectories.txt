@@ -1,3 +1,0 @@
-D:/Programme/IDEAProjects/C/Tools/Lagrange Interpolation/cmake-build-debug/CMakeFiles/Lagrange_Interpolation.dir
-D:/Programme/IDEAProjects/C/Tools/Lagrange Interpolation/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Programme/IDEAProjects/C/Tools/Lagrange Interpolation/cmake-build-debug/CMakeFiles/rebuild_cache.dir
