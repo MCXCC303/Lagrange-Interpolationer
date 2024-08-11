@@ -10,4 +10,6 @@
 
 void printFactorResult(Factors *factors, int order);
 
+char *returnFactorResult(Factors *factors, int order);
+
 #endif //LAGRANGE_INTERPOLATION_PRINTFACTORRESULT_H

@@ -10,17 +10,19 @@
 #include "FactorSequence.h"
 #include "FractionSimplifier.h"
 #include "../Output/PrintFactorResult.h"
-#include "../Output/LatexStyleOutput.h"
 
-int single() {
+char *singleValueCalc(char *org) {
     // Data Collection
-    freopen("input.txt", "r", stdin);
     int *value_sequence;
+    FILE *stream;
+    stream = fopen("org.in", "w");
+    fprintf(stream, "%s", org);
+    fclose(stream);
+    freopen("org.in", "r", stdin);
     int size = 1;
     value_sequence = (int *) malloc(size * sizeof(int));
     while (scanf("%d", &value_sequence[size - 1]) != EOF) {
         size++;
-        value_sequence = (int *) realloc(value_sequence, size * sizeof(int));
     }
     size--;
 
@@ -30,7 +32,6 @@ int single() {
      * Example:
      * value_sequence = {1, 7, 3, 12};
      * order = 3, length = 4;
-     *
      */
 
     // Initialize Linear Sequence and Line Base
@@ -39,7 +40,6 @@ int single() {
         lineList[i] = initLinearSequence(lineList[i], i + 1, value_sequence[i]);
         lineList[i] = generateLinearSequence(lineList[i], size - 1);
     }
-
     LBase *lBaseList[size];
     for (int i = 0; i < size; ++i) {
         lBaseList[i] = initLineBase(lBaseList[i], size - 1);
@@ -59,9 +59,19 @@ int single() {
     } // Simplify Fraction
 
     // Print Result
-    printFactorResult(factors, size - 1);
-    latexStyleOutput(factors, size - 1);
+    char *result = returnFactorResult(factors, size - 1);
+//    latexStyleOutput(factors, size - 1);
 
-    free(value_sequence);
-    return 0;
+    // Free Memory
+    free(factors);
+    free(lBaseResult->numeratorSequence);
+    free(lBaseResult);
+    for (int i = 0; i < size; ++i) {
+        free(lineList[i]->sequence);
+        free(lineList[i]);
+        free(lBaseList[i]->numeratorSequence);
+        free(lBaseList[i]);
+    }
+    fclose(stdin);
+    return result;
 }

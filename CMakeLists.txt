@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 23)
 
 link_libraries(libeasyx.a libgdi32.a libole32.a)
 add_executable(Lagrange_Interpolation
-        SingleValue/main.c
+        "SingleValue/SingleValue.c"
         SingleValue/PolyCalc.c
         SingleValue/PreFunc.c
         SingleValue/PreFunc.h
@@ -29,4 +29,5 @@ add_executable(Lagrange_Interpolation
         Output/LatexStyleOutput.h
         Graphic/Main.cpp
         Graphic/Configurations.h
+        SingleValue/SingleValue.h
 )
