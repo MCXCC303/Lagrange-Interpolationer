@@ -5,6 +5,9 @@
 #ifndef LAGRANGE_INTERPOLATION_CONFIGURATIONS_H
 #define LAGRANGE_INTERPOLATION_CONFIGURATIONS_H
 
+#include "unistd.h"
+#include "windows.h"
+
 #define bkColor RGB(50, 205, 50)
 #define lightTextColor RGB(255, 255, 255)
 #define darkTextColor RGB(0, 0, 0)

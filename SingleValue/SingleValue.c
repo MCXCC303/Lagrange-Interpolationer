@@ -66,6 +66,7 @@ char *singleValueCalc(char *org) {
     free(factors);
     free(lBaseResult->numeratorSequence);
     free(lBaseResult);
+    free(value_sequence);
     for (int i = 0; i < size; ++i) {
         free(lineList[i]->sequence);
         free(lineList[i]);

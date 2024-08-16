@@ -30,6 +30,7 @@ int main() {
     short recSingleValueResultPos[4] = {20, 100, 380, 280};
     short recSingleValueBackPos[4] = {20, 250, 60, 280};
     short recSingleValueAgainPos[4] = {80, 250, 128, 280};
+    short recSingleValueCopyPos[4] = {148, 250, 204, 280};
     RECT recSingleValueTitle = {recSingleValueTitlePos[0], recSingleValueTitlePos[1], recSingleValueTitlePos[2],
                                 recSingleValueTitlePos[3]};
     RECT recSingleValueResult = {recSingleValueResultPos[0], recSingleValueResultPos[1], recSingleValueResultPos[2],
@@ -38,6 +39,8 @@ int main() {
                                recSingleValueBackPos[3]};
     RECT recSingleValueAgain = {recSingleValueAgainPos[0], recSingleValueAgainPos[1], recSingleValueAgainPos[2],
                                 recSingleValueAgainPos[3]};
+    RECT recSingleValueCopy = {recSingleValueCopyPos[0], recSingleValueCopyPos[1], recSingleValueCopyPos[2],
+                               recSingleValueCopyPos[3]};
 
     // Single Value Calculation
     char *input;
@@ -95,6 +98,8 @@ int main() {
         if (mouse.uMsg == WM_LBUTTONDOWN) {
             if (mouse.x >= recMenuExitPos[0] && mouse.x <= recMenuExitPos[2] && mouse.y >= recMenuExitPos[1] &&
                 mouse.y <= recMenuExitPos[3]) {
+                free(result);
+                free(input);
                 closegraph();
                 return 0;
             }
@@ -139,8 +144,12 @@ int main() {
                 // InputBox
                 InputBox(input, 100, "Enter the value you want to calculate:\nFormat: 1 3 5 7 114514",
                          "Single Value Calculation");
+                if (strcmp(input, "") == 0) {
+                    outtextxy(20, 120, "You didn't enter anything!");
+                    goto SingleValueButtons;
+                }
 
-                // Output
+                // Output & Copy Button
                 result = singleValueCalc(input);
                 setcolor(buttonColor);
                 fillrectangle(recSingleValueResultPos[0], recSingleValueResultPos[1], recSingleValueResultPos[2],
@@ -148,21 +157,31 @@ int main() {
                 settextstyle(&fontMC);
                 setcolor(lightTextColor);
                 drawtext(result, &recSingleValueResult, DT_LEFT | DT_WORDBREAK | DT_NOCLIP);
+                setbkcolor(bkColor);
+                setcolor(darkTextColor);
+                outtextxy(20, 80, "Result:");
+                setbkcolor(bkColor);
+                setfillcolor(bkColor);
+                setcolor(bkColor);
+                fillrectangle(recSingleValueCopyPos[0], recSingleValueCopyPos[1], recSingleValueCopyPos[2],
+                              recSingleValueCopyPos[3]);
+                setcolor(darkTextColor);
+                drawtext("Copy", &recSingleValueCopy, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
 
+                SingleValueButtons:
                 // Again & Back Button
+                settextstyle(&fontMC);
+                setbkcolor(bkColor);
                 setfillcolor(bkColor);
                 setcolor(bkColor);
                 fillrectangle(recSingleValueAgainPos[0], recSingleValueAgainPos[1], recSingleValueAgainPos[2],
                               recSingleValueAgainPos[3]);
                 fillrectangle(recSingleValueBackPos[0], recSingleValueBackPos[1], recSingleValueBackPos[2],
                               recSingleValueBackPos[3]);
-                setbkcolor(bkColor);
                 setcolor(darkTextColor);
-                outtextxy(20, 80, "Result:");
                 drawtext("Again", &recSingleValueAgain, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
                 drawtext("Back", &recSingleValueBack, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
                 system("del result.txt org.in");
-                free(result);
                 goto SingleValue;
             }
             FlushMouseMsgBuffer();
@@ -194,6 +213,18 @@ int main() {
                 setbkcolor(bkColor);
                 cleardevice();
                 goto Menu;
+            }
+            if (mouse.x >= recSingleValueCopyPos[0] && mouse.x <= recSingleValueCopyPos[2] &&
+                mouse.y >= recSingleValueCopyPos[1] && mouse.y <= recSingleValueCopyPos[3]) {
+                HGLOBAL hMem = GlobalAlloc(GMEM_MOVEABLE, strlen(result) + 1);
+                auto pMem = (LPTSTR) GlobalLock(hMem);
+                OpenClipboard(nullptr);
+                EmptyClipboard();
+                strcpy(pMem, result);
+                GlobalUnlock(hMem);
+                SetClipboardData(CF_TEXT, pMem);
+                CloseClipboard();
+                drawtext("Copied", &recSingleValueCopy, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
             }
             FlushMouseMsgBuffer();
         }
