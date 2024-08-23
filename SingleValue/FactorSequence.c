@@ -4,15 +4,8 @@
 */
 
 #include "LineBase.h"
+#include "FactorSequence.h"
 
-typedef struct FactorSequence {
-    /**
-     * @brief Factor sequence contain a pointer to a 2D array in {{nu1,de},{nu2,de},...}
-     * @note nu stands for numerator, de stands for denominator
-     * @note nu and de comes directly from LineBases
-     */
-    long long **sequence;
-} Factors;
 
 Factors *sequenceTransfer(Factors *factors, LBase *lineBase) {
     /**
