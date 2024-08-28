@@ -5,9 +5,8 @@
 #ifndef LAGRANGE_INTERPOLATION_LATEXSTYLEOUTPUT_H
 #define LAGRANGE_INTERPOLATION_LATEXSTYLEOUTPUT_H
 
-#include "stdio.h"
-#include "../SingleValue/FactorSequence.h"
+#include "../SingleValue/builtin.h"
 
 void latexStyleOutput(Factors *factors, int order);
 
-#endif //LAGRANGE_INTERPOLATION_LATEXSTYLEOUTPUT_H
+#endif // LAGRANGE_INTERPOLATION_LATEXSTYLEOUTPUT_H

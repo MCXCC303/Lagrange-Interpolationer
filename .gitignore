@@ -89,3 +89,4 @@ dkms.conf
 # Compile Files
 .idea
 cmake-build-debug/
+build/
