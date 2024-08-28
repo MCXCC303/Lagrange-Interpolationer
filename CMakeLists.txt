@@ -6,6 +6,8 @@ set(CMAKE_CXX_STANDARD 23)
 #link_libraries(libeasyx.a libgdi32.a libole32.a)
 add_executable(Lagrange_Interpolation
         SingleValue/AdditionTest.c
+        SingleValue/builtin.c
+        SingleValue/builtin.h
         SingleValue/FactorSequence.c
         SingleValue/FractionAddition.c
         SingleValue/FractionSimplifier.c
